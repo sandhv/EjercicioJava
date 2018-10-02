@@ -19,6 +19,7 @@ public class HolaMundo {
         Loops loops = new Loops();
         loops.iterarConFor();
 
+	// instanciar auto
         Auto auto = new Auto();
         System.out.println(auto.getPlaca());
         System.out.println("Llantas: " + auto.getNumeroLlantas());
@@ -28,6 +29,7 @@ public class HolaMundo {
         System.out.println("Llantas: " + moto.getNumeroLlantas());
         moto.lavarVehiculo();
 
+	// bloque try
         try {
             Auto auto2 = new Auto("ULD7727");
             System.out.println(auto2.getPlaca());
@@ -36,7 +38,6 @@ public class HolaMundo {
             throw e;
         } catch (RuntimeException re) {
             // liberar recursos
-
         }
 
 
