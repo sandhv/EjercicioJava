@@ -1,10 +1,11 @@
 package colecciones;
 
-public class Dvd {
+public class Dvd implements Comparable<Dvd>{
 
     private String titulo;
     private String genero;
     private String protagonista;
+    private String director;
 
     //Constructor
     public Dvd(){
@@ -23,6 +24,13 @@ public class Dvd {
         this(titulo, genero);
         this.protagonista = protagonista;
     }
+
+    public Dvd(String titulo, String genero, String protagonista, String director) {
+        this(titulo, genero, protagonista);
+        this.director = director;
+    }
+
+
 
     public String getTitulo() {
         return titulo;
@@ -47,4 +55,25 @@ public class Dvd {
     public void setProtagonista(String protagonista) {
         this.protagonista = protagonista;
     }
+
+    public String getDirector() {
+        return director;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
+
+    @Override
+    public String toString(){
+        return titulo + "-" + genero + "-" + protagonista + "-" + director;
+    }
+
+
+    @Override
+    public int compareTo(Dvd o) {
+        return titulo.compareTo(o.titulo);
+
+    }
 }
+

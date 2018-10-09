@@ -22,8 +22,6 @@ public class ListSetMapTest {
         set.add("Josman");
         set.add("Gera");
 
-
-
         Map<String, String> mapa = new HashMap<>();
         mapa.put("Isra" , "Israel Segundo");
         mapa.put("Dann", "Dann Hernandez");
